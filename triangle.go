@@ -7,10 +7,10 @@ type Triangle struct {
 	Side float64
 }
 
-func (triangle Triangle) CalcPerimeter() float64 {
-	return 3 * triangle.Side
+func (t Triangle) CalcPerimeter() float64 {
+	return 3 * t.Side
 }
 
-func (triangle Triangle) CalcArea() float64 {
-	return math.Sqrt(3) / 4 * (triangle.Side * triangle.Side)
+func (t Triangle) CalcArea() float64 {
+	return (math.Sqrt(3) / 4) * (t.Side * t.Side)
 }
